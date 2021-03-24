@@ -11,5 +11,5 @@ def showContact(request):
     return HttpResponse(s)
 
 def about(request):
-    s="<h1>This is an about Page</h1>"
-    return HttpResponse(s)
+
+    return render(request,'testapp/about.html')
