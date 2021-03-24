@@ -11,23 +11,29 @@
  </div>
  <div class="questionblock">
  <div class="que">
- <h2>Who developed C Language?</h2>
+ <h2>{{que}}</h2>
+ {% if level %}
+  {{level}}
+{% else %}
+  Level not defined
+{% endif %}
  </div>
  <div class="options">
- <input type="radio" name="answer"><span>Ken Thompson</span>
+ <input type="radio" name="answer"><span>{{a}}</span>
  </div>
  <div class="options">
- <input type="radio" name="answer"><span>Dennis Ritchie</span>
+ <input type="radio" name="answer"><span>{{b}}</span>
  </div>
  <div class="options">
- <input type="radio" name="answer"><span>Bjarne Stroustrup</span>
+ <input type="radio" name="answer"><span>{{c}}</span>
  </div>
  <div class="options">
- <input type="radio" name="answer"><span>Saurabh Shukla</span>
+ <input type="radio" name="answer"><span>{{d}}</span>
  </div>
  <div class="submit">
  <input type="submit" >
  </div>
  </div>
+ 
  </body>
 </html>
