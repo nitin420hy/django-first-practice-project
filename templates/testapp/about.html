@@ -1,11 +1,15 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title> About Page </title>
   </head>
   <body>
-    <h1>{{ x|divisibleby:"3" }}</h1>
-    
+
+    {%load app_tags%}
+    {%get_date as today%}
+
+    <h1>Today is {{today|date:"D d M Y"}}</h1>
+
   </body>
 </html>
